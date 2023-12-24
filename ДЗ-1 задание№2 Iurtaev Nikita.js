@@ -5,13 +5,19 @@ firstNum = Number(firstNum).toString() === firstNum ? Number(firstNum) : NaN;
 if (!isNaN(firstNum)) {
   let secondNum = prompt();
   secondNum = Number(secondNum).toString() === secondNum ? Number(secondNum) : NaN;
+  
   if (!isNaN(secondNum)) {
     console.log(
       `Ответ: ${firstNum + secondNum}, ${firstNum / secondNum}.`
     );
-  } else {
+    
+  } 
+  
+  else {
     console.log(ERROR_MESSAGE);
   }
-} else {
+} 
+
+else {
   console.log(ERROR_MESSAGE);
 }
