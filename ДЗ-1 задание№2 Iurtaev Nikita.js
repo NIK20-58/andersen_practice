@@ -6,7 +6,7 @@ if (!isNaN(firstNum)) {
   let secondNum = prompt();
   secondNum = Number(secondNum).toString() === secondNum ? Number(secondNum) : NaN;
   
-  if (!isNaN(secondNum)) {
+  if (!isNaN(secondNum) || secondNum === 0) {
     console.log(
       `Ответ: ${firstNum + secondNum}, ${firstNum / secondNum}.`
     );
