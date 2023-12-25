@@ -1,11 +1,12 @@
 let firstNum = prompt();
 let secondNum = prompt();
 
-firstNum = Number(firstNum).toString() === firstNum ? Number(firstNum) : NaN;
-secondNum = Number(secondNum).toString() === secondNum ? Number(secondNum) : NaN;
 
-if (!isNaN(firstNum) && !isNaN(secondNum)) {
 
+if (firstNum.trim()!=='' && secondNum.trim()!=='' && !isNaN(firstNum) && !isNaN(secondNum)) {
+  firstNum = Number(firstNum);
+  secondNum = Number(secondNum);
+  
   if (secondNum === 10 || firstNum < secondNum) {
     console.log(firstNum);
   }
