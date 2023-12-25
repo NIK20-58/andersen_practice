@@ -1,14 +1,14 @@
 const ERROR_MESSAGE = "Некорректный ввод!";
 let firstNum = prompt();
-firstNum = Number(firstNum).toString() === firstNum ? Number(firstNum) : NaN;
 
-if (!isNaN(firstNum)) {
+
+if (firstNum.trim() !== '' && !isNaN(firstNum)) {
   let secondNum = prompt();
-  secondNum = Number(secondNum).toString() === secondNum ? Number(secondNum) : NaN;
   
-  if (!isNaN(secondNum) && secondNum !== 0) {
+  
+  if (secondNum.trim() !== '' && !isNaN(secondNum) && secondNum !== '0') {
     console.log(
-      `Ответ: ${firstNum + secondNum}, ${firstNum / secondNum}.`
+      `Ответ: ${Number(firstNum) + Number(secondNum)}, ${Number(firstNum) / Number(secondNum)}.`
     );
     
   } 
