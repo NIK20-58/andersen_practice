@@ -15,5 +15,3 @@ const myIterable = {
       };
     },
   }
-
-  console.log(...myIterable)
