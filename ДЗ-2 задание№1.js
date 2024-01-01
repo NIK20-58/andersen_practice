@@ -1,5 +1,4 @@
 function makeObjectDeepCopy(element) {
-  
   if (typeof element !== "object" || element === null) {
     return element;
   }
