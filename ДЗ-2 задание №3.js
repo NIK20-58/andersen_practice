@@ -7,11 +7,10 @@ const myIterable = {
         next() {
           if (typeof from === 'number' && typeof to === 'number' && !isNaN(from) && !isNaN(to) && isFinite(from) && isFinite(to) && from < to) {
             return count <= to ? {value:count++,done:false}: {value: undefined, done:true};
-          }
-          else {
+          } else {
             throw new Error('Ошибка')
           }
         }
       };
     },
-  }
+  };
