@@ -3,7 +3,7 @@ function createDebounceFunction(fn,delay) {
 
     return function (...args) {
         if (timer) {
-            clearTimeout(funId)
+            clearTimeout(timer)
         }
 
         timer = setTimeout(()=>{
