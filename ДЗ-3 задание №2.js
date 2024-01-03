@@ -7,7 +7,7 @@ function createDebounceFunction(fn,delay) {
         }
 
         timer = setTimeout(()=>{
-            fn(args)
+            fn(...args)
         }, delay)
     };
 }
