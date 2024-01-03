@@ -1,11 +1,13 @@
 function createDebounceFunction(fn,delay) {
-    let funId;
+    let timer;
 
     return function (...args) {
-        clearTimeout(funId)
+        if (timer) {
+            clearTimeout(funId)
+        }
 
-        funId = setTimeout(()=>{
+        timer = setTimeout(()=>{
             fn(args)
-        },delay)
+        }, delay)
     };
 }
